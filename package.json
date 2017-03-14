@@ -1,0 +1,32 @@
+{
+  "name": "poly-ui",
+  "version": "1.0.0",
+  "description": "Modular css with SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofianMourabit/poly-ui.git"
+  },
+  "keywords": [
+    "SASS",
+    "CSS",
+    "BEM",
+    "SMACSS"
+  ],
+  "author": "Sofian Mourabit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SofianMourabit/poly-ui/issues"
+  },
+  "homepage": "https://github.com/SofianMourabit/poly-ui#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-watch": "^4.3.11"
+  }
+}
