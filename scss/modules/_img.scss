@@ -1,0 +1,4 @@
+.site-logo {
+	@include img-replace("logo.svg", 115px, 45px, inline-block);
+	margin-bottom: 2em;
+}

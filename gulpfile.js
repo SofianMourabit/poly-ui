@@ -7,7 +7,7 @@ sass = require('gulp-sass'),
 sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('compileSass', function () {
- return gulp.src('scss/main.scss')
+  return gulp.src('scss/application.scss')
   .pipe(sourcemaps.init())
   .pipe(sass())
   .pipe(sourcemaps.write('./'))
@@ -24,11 +24,11 @@ gulp.task('webserver',['compileSass','sass:watch'], function() {
     defaultFile: 'index.html',
     port: 3000,
     livereload: {
-        enable: true,
-        filter: function (filename, cb) {
-          cb(!/\.(sa|le)ss$|node_modules/.test(filename));
-        }
-      },
+      enable: true,
+      filter: function (filename, cb) {
+        cb(!/\.(sa|le)ss$|node_modules/.test(filename));
+      }
+    },
     open: true
   }));
 });
